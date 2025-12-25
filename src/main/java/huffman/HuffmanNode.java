@@ -22,6 +22,10 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
     public boolean isLeaf() {
         return left == null && right == null;
     }
+
+    public int getFrequency() {
+        return frequency;
+    }
     
     @Override
     public int compareTo(HuffmanNode o) {
