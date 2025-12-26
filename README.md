@@ -4,6 +4,7 @@ This project implements the Huffman coding algorithm for text compression
 using Java.
 
 ## Features
+
 - Frequency analysis of characters
 - Huffman tree construction using a priority queue
 - Binary code generation
@@ -11,14 +12,19 @@ using Java.
 - Compression rate calculation
 
 ## How to Run
+
 1. Place your text in `input.txt`
 2. Compile:
-   javac huffman/*.java
+   ```
+   javac -d bin src/main/java/huffman/*.java src/main/java/utils/*.java
+   ```
 3. Run:
-   java huffman.Main
+   ```
+   java -cp bin huffman.Main
+   ```
 
 ## Constraints
+
 - No external Huffman libraries used
 - Uses Java PriorityQueue
 - Supports special characters
-

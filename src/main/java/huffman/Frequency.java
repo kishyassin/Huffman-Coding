@@ -1,7 +1,7 @@
-
 import java.util.Map;
 
-public class Frequency{
+public class Frequency {
+
     public Map<Character, Integer> calculateFrequency(String text) {
         Map<Character, Integer> frequencyMap = new java.util.HashMap<>();
         for (char c : text.toCharArray()) {
