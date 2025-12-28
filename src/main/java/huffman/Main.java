@@ -1,3 +1,5 @@
+package huffman;
+
 import utils.TextProcessor;
 import java.util.Map;
 
@@ -73,6 +75,12 @@ public class Main {
             System.out.println("Compressed Size: " + compressedBits + " bits");
             System.out.println("Space Saved: " + (originalBits - compressedBits) + " bits");
             System.out.println("Compression Ratio: " + String.format("%.2f%%", compressionRatio));
+            System.out.println();
+
+            // Step 8: Generate Graphviz visualization
+            System.out.println("=== TREE VISUALIZATION ===");
+            GraphvizGenerator graphviz = new GraphvizGenerator();
+            graphviz.generateDotFile(huffmanTree.getRoot(), "huffman_tree");
 
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());

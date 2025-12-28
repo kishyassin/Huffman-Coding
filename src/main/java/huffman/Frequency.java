@@ -1,3 +1,5 @@
+package huffman;
+
 import java.util.Map;
 
 public class Frequency {
